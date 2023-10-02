@@ -1,0 +1,128 @@
+.App {
+  justify-content: center;
+  align-items: center;
+  background: #524f57;
+}
+
+.boardwrapper {
+  width: 100vw;
+  height: 80vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background: #524f57;
+}
+.downwrapper {
+  width: 100vw;
+  height: 20vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background: #100d14;
+  color: #fff;
+  font-size: 30px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+h2.redmsg {
+  color: red;
+  font-size: 60px;
+  font-family: cursive;
+  text-shadow: 0 0 5px #700707cf;
+}
+
+h3.playerXO {
+  font-size: 55px;
+  color: #f00;
+  font-family: monospace;
+}
+h3.winmsg {
+  font-size: 55px;
+  color: #fdd;
+  font-family: monospace;
+}
+h3.drawmsg {
+  font-size: 55px;
+  color: #fff;
+  font-family: monospace;
+}
+button {
+  border: none;
+  padding: 12px 30px;
+  border-radius: 20px;
+  background: #fef9ff;
+  box-shadow: 0 0 10px #666;
+  font-size: 24px;
+  font-family: cursive;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: #76707780;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: ease-in-out 0.3s;
+}
+
+.board {
+  width: 460px;
+  height: 460px;
+  background-color: #c2bdca;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+}
+
+.square:hover {
+  background-color: #8c80a0;
+
+}
+
+.square {
+  background-color: #aea8b9;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 5px 15px #283241;
+  flex: 33% 1;
+  height: 100%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 60px;
+  color: rgb(158, 50, 50);
+}
+
+.header {
+  font-size: 40px;
+  color: rgb(18, 37, 37);
+  text-shadow: 0 0 8px #222;
+  font-family: cursive;
+}
+.square:active {
+  background-color: #665a7c;
+
+}
+
+.showresult {
+  background-color: #1a1a1ac7;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+}
